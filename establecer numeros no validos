@@ -29,11 +29,8 @@ namespace dias
             Console.WriteLine("ingrese el dia");
             dia = Convert.ToInt32(Console.ReadLine());
 
-            double bisiesto = anyo % 4;
-            Convert.ToDouble(dia);
-            Convert.ToDouble(mes);
-
-
+            int bisiesto = anyo % 4;
+            
             //Se establece el limite de febrero en año bisiesto
             if (bisiesto == 0 && mes == 2 && dia > 29)
             {
